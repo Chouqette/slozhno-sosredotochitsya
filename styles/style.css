@@ -1,5 +1,54 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background: var(--background-image) no-repeat top center, var(--bakground-color);
+    /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+}
+.header {
+  padding: 20px;
+  position: relative;
+}
+
+.rec {
+  position: absolute;
+  color: var(--record-color);
+  text-transform: uppercase;
+  right: 48px;
+}
+.header__theme-menu-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  color: var(--theme-switchers);
+  border: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+.header__title-container {
+  display: flex;
+  flex-direction: column;
+  padding: 273px 0px 134px;
+  gap: 114px;
+}
+
+.header__title {
+  /* TODO: определить отступ*/
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  color: var(--title-color);
+  text-shadow: 4px 4px 0 var(--shadow-color);
+  font-weight: 700;
+  margin-left: -1.5%;
+}
+.title-decor {
+  color: var(--subtitle-color);
+  font-weight: 700;
+}
+.header__subtitle {
+  background: var(--subtitle-background-color);
+  align-self: flex-end;
+  width: 50%;
 }
