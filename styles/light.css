@@ -3,9 +3,6 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root {
-  --accent-color: #ff8dcb;
-}
 .page.theme_light {
   --title-color: #ffc2e6;
   --subtitle-color: #353430;
@@ -17,6 +14,7 @@
   --record-color: var(--subtitle-background-color);
   --bakground-color: #ff8dcb;
   --background-image: url(../images/cover-image-light.png);
+  --corner: var(--main-text-color);
 }
 .page.theme_light .rec {
   display: none;

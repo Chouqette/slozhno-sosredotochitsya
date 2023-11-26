@@ -8,7 +8,7 @@
 
 body {
   min-inline-size: 375px;
-  max-inline-size: 1440px;
+  max-inline-size: 1024px;
   margin: 0 auto;
   font-family: var(--font-family);
   font-size: 18px;
@@ -42,4 +42,40 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+}
+
+.decorations::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-left: 1px solid var(--corner);
+  border-bottom: 1px solid var(--corner);
+  left: 20px;
+  bottom: 20px;
+}
+
+@media (width < 768px) and (width >= 375px) {
+  .decorations::before {
+    left: 10px;
+    bottom: 17px;
+  }
+}
+
+.decorations::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-right: 1px solid var(--corner);
+  border-top: 1px solid var(--corner);
+  right: 20px;
+  top: 20px;
+}
+
+@media (width < 768px) and (width >= 375px) {
+  .decorations::after {
+    right: 10px;
+    top: 10px;
+  }
 }

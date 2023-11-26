@@ -18,6 +18,7 @@
     --record-color: var(--subtitle-background-color);
     --bakground-color: var(--subtitle-color);
     --background-image: url(../images/cover-image-dark.png);
+    --corner: var(--subtitle-background-color);
   }
 }
 @media (prefers-color-scheme: light) {
@@ -32,5 +33,6 @@
     --record-color: var(--subtitle-background-color);
     --bakground-color: var(--subtitle-color);
     --background-image: url(../images/cover-image-light.png);
+    --corner: var(--main-text-color);
   }
 }
