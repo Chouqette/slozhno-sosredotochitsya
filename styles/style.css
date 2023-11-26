@@ -84,9 +84,6 @@
 }
 
 .section__title {
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--section-title-text-color);
   width: calc((100vw - 20px - 20px - 20px) / 3);
 }
 
