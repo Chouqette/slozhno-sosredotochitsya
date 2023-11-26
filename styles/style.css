@@ -2,6 +2,8 @@
 
 .page {
   background: var(--background-image) no-repeat top center, var(--bakground-color);
+  background-size: auto 768px;
+  background-attachment: fixed;
     /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 .header {
@@ -36,19 +38,78 @@
 }
 
 .header__title {
-  /* TODO: определить отступ*/
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   color: var(--title-color);
   text-shadow: 4px 4px 0 var(--shadow-color);
   font-weight: 700;
-  margin-left: -1.5%;
+  margin-left: -2%;
 }
 .title-decor {
+  background: var(--subtitle-background-color);
   color: var(--subtitle-color);
   font-weight: 700;
+  font-size: 18px;
 }
 .header__subtitle {
-  background: var(--subtitle-background-color);
   align-self: flex-end;
   width: 50%;
+}
+
+/* секции */
+
+.main {
+  padding: 0px 20px;
+  margin: 60px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+
+.section__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--section-title-text-color);
+  width: calc((100vw - 20px - 20px - 20px) / 3);
+}
+
+.section:nth-of-type(odd) {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 2fr;
+}
+.section:nth-of-type(2) {
+  display: grid;
+  gap: 20px;
+}
+.section__list_why {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section__list_what {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.section__list-item {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.section__list-item-title {
+  background: var(--subtitle-background-color);
+  color: var(--subtitle-color);
+  font-size: 18px;
+  font-weight: 700;
+}
+.section__list-item-text {
+  color: var(--main-text-color);
+  font-weight: 400;
+}
+.content {
+  font-weight: 400;
 }
