@@ -55,7 +55,7 @@ a {
   bottom: 20px;
 }
 
-@media (width < 768px) and (width >= 375px) {
+@media (width < 768px) and (width >=375px) {
   .decorations::before {
     left: 10px;
     bottom: 17px;
@@ -73,7 +73,7 @@ a {
   top: 20px;
 }
 
-@media (width < 768px) and (width >= 375px) {
+@media (width < 768px) and (width >=375px) {
   .decorations::after {
     right: 10px;
     top: 10px;

@@ -16,6 +16,7 @@
   --background-image: url(../images/cover-image-light.png);
   --corner: var(--main-text-color);
 }
+
 .page.theme_light .rec {
   display: none;
 }
