@@ -152,7 +152,7 @@
   text-shadow: 3px 3px 0px var(--text-shadow);
   transition-duration: var(--transition);
 }
-.text-link:hover{
+.text-link:hover {
   border-bottom: 1px solid var(--main-text-color);
 }
 .text-link:focus {
