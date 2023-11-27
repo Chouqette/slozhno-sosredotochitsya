@@ -12,7 +12,7 @@
   --theme-switchers: var(--main-text-color);
   --shadow-color: #ff0070;
   --record-color: var(--subtitle-background-color);
-  --bakground-color: #ff8dcb;
+  --bakground-color: #fff1f7;
   --background-image: url(../images/cover-image-light.png);
   --corner: var(--main-text-color);
 }
