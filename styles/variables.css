@@ -28,10 +28,9 @@
 @media (prefers-color-scheme: light) {
   :root {
     --title-color: #ffc2e6;
-    --subtitle-color: #fff1f7;
+    --subtitle-color: #fff1ff;
     --subtitle-background-color: #ff0070;
     --main-text-color: #353430;
-    --section-title-text-color:
     --theme-switchers: var(--main-text-color);
     --shadow-color: var(--subtitle-background-color);
     --text-shadow: #ff8dcb;
