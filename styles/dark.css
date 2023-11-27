@@ -16,4 +16,5 @@
   --bakground-color: var(--subtitle-color);
   --background-image: url(../images/cover-image-dark.png);
   --corner: var(--subtitle-background-color);
+  --text-shadow: #ff0070;
 }
