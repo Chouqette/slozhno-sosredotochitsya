@@ -12,3 +12,6 @@
   --corner: var(--subtitle-background-color);
   --text-shadow: #ff0070;
 }
+.page.theme_dark .rec {
+  display: block;
+}
